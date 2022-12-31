@@ -35,14 +35,125 @@ export default function Weather() {
               <img
                 src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png"
                 alt="rainy"
-                className="d-inline-block "
+                className="d-inline-block currentIcon "
               />
               <span className="currentTemp">13</span>
               <span className="unit">°C</span>
             </div>
           </div>
         </div>
-        <div className="col-5">forecast</div>
+        <div className="weatherForecast col-5">
+          <div className="forecastCard mb-2">
+            <div className="row">
+              <ul className="col-3">
+                <li className="day">Sun</li>
+                <li className="day">Jun 24</li>
+              </ul>
+              <div className="col-3">
+                <img
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+                  alt="cloudy"
+                  className="forecastIcon"
+                />
+              </div>
+              <ul className="col-6">
+                <li>Clear with periodic clouds</li>
+                <li>
+                  <span className="forecastMinTemp">11°</span>
+                  <span>14°</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="forecastCard mb-2">
+            <div className="row">
+              <ul className="col-3">
+                <li className="day">Sun</li>
+                <li className="day">Jun 24</li>
+              </ul>
+              <div className="col-3">
+                <img
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+                  alt="cloudy"
+                  className="forecastIcon"
+                />
+              </div>
+              <ul className="col-6">
+                <li>Clear with periodic clouds</li>
+                <li>
+                  <span className="forecastMinTemp">11°</span>
+                  <span>14°</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="forecastCard mb-2">
+            <div className="row">
+              <ul className="col-3">
+                <li className="day">Sun</li>
+                <li className="day">Jun 24</li>
+              </ul>
+              <div className="col-3">
+                <img
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+                  alt="cloudy"
+                  className="forecastIcon"
+                />
+              </div>
+              <ul className="col-6">
+                <li>Clear with periodic clouds</li>
+                <li>
+                  <span className="forecastMinTemp">11°</span>
+                  <span>14°</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="forecastCard mb-2">
+            <div className="row">
+              <ul className="col-3">
+                <li className="day">Sun</li>
+                <li className="day">Jun 24</li>
+              </ul>
+              <div className="col-3">
+                <img
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+                  alt="cloudy"
+                  className="forecastIcon"
+                />
+              </div>
+              <ul className="col-6">
+                <li>Clear with periodic clouds</li>
+                <li>
+                  <span className="forecastMinTemp">11°</span>
+                  <span>14°</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="forecastCard mb-2">
+            <div className="row">
+              <ul className="col-3">
+                <li className="day">Sun</li>
+                <li className="day">Jun 24</li>
+              </ul>
+              <div className="col-3">
+                <img
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+                  alt="cloudy"
+                  className="forecastIcon"
+                />
+              </div>
+              <ul className="col-6">
+                <li>Clear with periodic clouds</li>
+                <li>
+                  <span className="forecastMinTemp">11°</span>
+                  <span>14°</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
