@@ -1,0 +1,50 @@
+.Weather {
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  border-radius: 6px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.Weather .form-control {
+  max-width: 75%;
+}
+
+
+.Weather ul {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.Weather li {
+  list-style-type: none;
+  font-size: 15px;
+}
+.Weather .currentTemp {
+    font-size: 74px;
+    font-weight: 500;
+    line-height: 0;
+    position: relative;
+    left: -35px;
+    
+   
+}
+
+.Weather img {
+    position: relative;
+    top: -20px;
+    left: -35px;
+    width: 94px;
+    margin-right: 5px;
+}
+
+.Weather .unit {
+    position: relative;
+    top: -40px;
+    left: -30px;
+    font-size: 17px;
+}
+
+.Weather .min-max li {
+    font-size: 15px;
+}

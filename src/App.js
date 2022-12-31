@@ -1,12 +1,12 @@
 import React from "react";
-import "./WeatherApp.css";
+import "./App.css";
+import Weather from "./Weather";
 
-
-export default function WeatherApp() {
+export default function App() {
   return (
-    <div className="WeatherApp">
+    <div className="App">
       <div className="container">
-        <h1>WeatherApp</h1>
+        <Weather />
         <footer>
           This project was coded by{" "}
           <a
@@ -24,7 +24,6 @@ export default function WeatherApp() {
           >
             open_sourced on GitHub
           </a>
-          <button className="btn btn-primary d-block">Submit</button>
         </footer>
       </div>
     </div>
