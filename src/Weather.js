@@ -5,7 +5,7 @@ export default function Weather() {
   return (
     <div className="Weather">
       <div className="row">
-        <div className="col-7">
+        <div className="col-6">
           <form>
             <input
               type="search"
@@ -42,7 +42,7 @@ export default function Weather() {
             </div>
           </div>
         </div>
-        <div className="weatherForecast col-5">
+        <div className="weatherForecast col-6">
           <div className="forecastCard mb-2">
             <div className="row">
               <ul className="col-3">
@@ -56,7 +56,7 @@ export default function Weather() {
                   className="forecastIcon"
                 />
               </div>
-              <ul className="col-6">
+              <ul className="col-6 forecastDescription">
                 <li>Clear with periodic clouds</li>
                 <li>
                   <span className="forecastMinTemp">11°</span>
@@ -78,7 +78,7 @@ export default function Weather() {
                   className="forecastIcon"
                 />
               </div>
-              <ul className="col-6">
+              <ul className="col-6 forecastDescription">
                 <li>Clear with periodic clouds</li>
                 <li>
                   <span className="forecastMinTemp">11°</span>
@@ -100,7 +100,7 @@ export default function Weather() {
                   className="forecastIcon"
                 />
               </div>
-              <ul className="col-6">
+              <ul className="col-6 forecastDescription">
                 <li>Clear with periodic clouds</li>
                 <li>
                   <span className="forecastMinTemp">11°</span>
@@ -122,7 +122,7 @@ export default function Weather() {
                   className="forecastIcon"
                 />
               </div>
-              <ul className="col-6">
+              <ul className="col-6 forecastDescription">
                 <li>Clear with periodic clouds</li>
                 <li>
                   <span className="forecastMinTemp">11°</span>
@@ -144,7 +144,7 @@ export default function Weather() {
                   className="forecastIcon"
                 />
               </div>
-              <ul className="col-6">
+              <ul className="col-6 forecastDescription">
                 <li>Clear with periodic clouds</li>
                 <li>
                   <span className="forecastMinTemp">11°</span>

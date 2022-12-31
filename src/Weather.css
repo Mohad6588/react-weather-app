@@ -17,7 +17,9 @@
 
 .Weather li {
   list-style-type: none;
-  font-size: 15px;
+  font-size: 14px;
+  color: #70757a;
+  line-height: 1.7;
 }
 .Weather .currentTemp {
   font-size: 74px;
@@ -43,42 +45,39 @@
 }
 
 .Weather .min-max li {
-  font-size: 15px;
+  line-height: 1.9;
+  
 }
 
 .Weather .weatherForecast {
   text-align: center;
-  padding-left: 0;
+  padding-left: 8px;
 }
 
 .Weather .forecastCard {
-  width: 270px;
+  width: 310px;
   background-color: rgb(248, 248, 248);
   border-radius: 10px;
-  padding: 0 15px;
-  height: 58px;
+  padding: 5px 5px;
+  height: 64px;
   line-height: 1.7;
 }
 
 .Weather .forecastCard .forecastIcon {
   width: 74px;
-  text-align: center;
-  position: relative;
-  right: 15px;
+    position: relative;
   top: -10px;
-}
-.Weather .forecastCard li {
-  font-size: 14px;
+  right: 15px;
 }
 
-.Weather .col-6 li {
-  margin-left: 10px;
-  width: 110px;
+.Weather .forecastDescription li{
+  
+  width: 140px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .Weather .forecastMinTemp {
   margin-right: 15px;
-  color: red;
+  opacity: 0.6;
 }
