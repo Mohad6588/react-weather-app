@@ -2,5 +2,27 @@ import React from "react";
 import "./WeatherApp.css";
 
 export default function WeatherApp() {
-  return <div className="WeatherApp">WeatherApp</div>;
+  return (
+    <div className="WeatherApp">
+      <h1>WeatherApp</h1>
+      <footer>
+        This project was coded by{" "}
+        <a
+          href="https://symphonious-sunflower-8ca288.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Mohadeseh Moradian
+        </a>{" "}
+        and is {""}
+        <a
+          href="https://github.com/Mohad6588/react-weather-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          open_sourced on GitHub
+        </a>
+      </footer>
+    </div>
+  );
 }
