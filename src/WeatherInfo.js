@@ -34,7 +34,6 @@ export default function WeatherInfo(props) {
           </div>
           <div className="currentTemp">
             <WeatherTemperature celsius={props.data.temperature} />
-            
           </div>
           <div></div>
         </div>

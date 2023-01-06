@@ -57,7 +57,7 @@ export default function Weather(props) {
             </form>
             <WeatherInfo data={weatherData} />
           </div>
-          <div className="weatherForecast col-6">
+          {/* <div className="weatherForecast col-6">
             <div className="forecastCard mb-2">
               <div className="row">
                 <ul className="col-3">
@@ -80,7 +80,7 @@ export default function Weather(props) {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     );
