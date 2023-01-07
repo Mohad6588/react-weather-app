@@ -42,6 +42,11 @@ export default function WeatherIcon(props) {
     "mist-night": MistNight,
   };
   return (
-    <img src={codeMapping[props.code]} alt={props.alt} className="img-fluid" width={"94"} />
+    <img
+      src={codeMapping[props.code]}
+      alt={props.alt}
+      className="mt-0 "
+      width={props.width}
+    />
   );
 }

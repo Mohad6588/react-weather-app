@@ -1,17 +1,16 @@
 .Weather {
-  border: 1px solid rgba(0, 0, 0, 0.103);
   border-radius: 15px;
   padding: 20px;
   padding-bottom: 10px;
   background-color: rgba(25, 25, 112, 0.993);
 }
 .Weather .currentWeather {
-  background-color: rgba(253, 253, 253, 0.11);
-  padding: 0 0 0 8px;
+  background-color: rgba(253, 253, 253, 0.08);
+  padding: 0 0 0 10px;
   margin: 5px 0;
   border-radius: 8px;
   color: white;
-  height: 82%;
+  height: 317px;
 }
 
 .Weather .form-control {
@@ -33,52 +32,53 @@
   list-style-type: none;
   font-size: 14px;
   color: rgb(253, 253, 253, 0.8);
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+.Weather .currentWeather li {
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .Weather .currentTemp {
-  font-size: 74px;
+  font-size: 66px;
   font-weight: 500;
   line-height: 1.1;
 }
 
 .Weather .unit {
   position: relative;
-  bottom: 40px;
+  bottom: 35px;
   left: 5px;
   font-weight: 400;
   font-size: 16px;
 }
 
-.Weather .weatherForecast {
+.WeatherForecast {
   color: rgb(248, 248, 248);
   text-align: center;
-  padding-left: 8px;
 }
 
-.Weather .forecastCard {
-  width: 310px;
-  background-color: rgba(253, 253, 253, 0.11);
+.WeatherForecast-card {
+  width: 300px;
+  background-color: rgba(253, 253, 253, 0.08);
   border-radius: 10px;
-  padding: 5px;
-  height: 64px;
+  padding:0 0 0 35px;
+  height: 56px;
+  margin-bottom: 7px;
 }
 
-.Weather .forecastCard .forecastIcon {
-  width: 74px;
-  position: relative;
-  top: -10px;
-  right: 15px;
-}
-
-.Weather .forecastDescription li {
-  width: 140px;
+.Weather .WeatherForecast-description li {
+  width: 110px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
-.Weather .forecastMinTemp {
+.WeatherForecast-temp {
+  margin-top: 3px;
+}
+.WeatherForecast-temp-min {
   margin-right: 15px;
   opacity: 0.6;
 }
+

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -9,6 +10,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coordinates,
       city: response.data.city,
       country: response.data.country,
       date: new Date(response.data.time * 1000),
@@ -18,7 +20,7 @@ export default function Weather(props) {
       humidity: response.data.temperature.humidity,
       pressure: response.data.temperature.pressure,
       feels: response.data.temperature.feels_like,
-      icon:response.data.condition.icon,
+      icon: response.data.condition.icon,
     });
   }
 
@@ -57,30 +59,7 @@ export default function Weather(props) {
             </form>
             <WeatherInfo data={weatherData} />
           </div>
-          {/* <div className="weatherForecast col-6">
-            <div className="forecastCard mb-2">
-              <div className="row">
-                <ul className="col-3">
-                  <li className="day">Sun</li>
-                  <li className="day">Jun 24</li>
-                </ul>
-                <div className="col-3">
-                  <img
-                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-                    alt="{weatherData.description}"
-                    className="forecastIcon"
-                  />
-                </div>
-                <ul className="col-6 forecastDescription">
-                  <li>Clear with periodic clouds</li>
-                  <li>
-                    <span className="forecastMinTemp">11°</span>
-                    <span>14°</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> */}
+          <WeatherForecast coordinates={weatherData.coordinates} />
         </div>
       </div>
     );
